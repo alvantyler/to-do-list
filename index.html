@@ -4,19 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booklist App</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>To-do-app</title>
+
+
 </head>
 <body>
-    <h1>To do App</h1>
-    <div class="to-do">
-        <input type="text" class="input" placeholder="e.g.homework">
-        <button>add</button>
-        <div class="output">
-
-        </div>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+            My <span class="text-primary">Book</span>List
+        </h1>
+        <form id="book-form">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" id="author" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="isbn">ISBN</label>
+                <input type="text" id="isbn" class="form-control">
+            </div>
+            
+            <button  class="btn btn-primary btn-block">Add Book</button>
+            
+        </form>
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
     </div>
     
+<script src="script.js"></script>
 </body>
 </html>

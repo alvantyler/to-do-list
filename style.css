@@ -1,24 +1,5 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-}
-h1{
-    text-align: center;
-    margin: 20px 20px ;
-}
-.to-do{
-    margin: 0 auto;
-    text-align: center;
-    height: 300px;
-    width: 400px;
-    border: 2px solid black
 
-}
 
-.output{
-   height: 40px;
-   width: 100%;
-   background-color: azure;
-   margin-top:70px;
+table{
+    margin-top: 100px;
 }
